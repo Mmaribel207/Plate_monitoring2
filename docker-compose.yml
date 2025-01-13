@@ -1,0 +1,27 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    networks:
+      - node_network
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  
+      MYSQL_DATABASE: plate_db  
+    volumes:
+      - ./database_schema.sql:/docker-entrypoint-initdb.d/database_schema.sql
+    ports:
+      - "3306:3306"
+    networks:
+      - node_network 
+
+networks:
+  node_network:
+    driver: bridge 

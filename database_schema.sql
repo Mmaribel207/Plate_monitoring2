@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS plate_db;
+
+USE plate_db;
+
+CREATE TABLE plate (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    plate VARCHAR(50) NOT NULL,
+    ID_car VARCHAR(50) UNIQUE NOT NULL,
+    register_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    car_color VARCHAR(50),
+    image BLOB
+);

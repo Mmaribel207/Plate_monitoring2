@@ -1,0 +1,422 @@
+{
+  "config": {
+    "$": {
+      "version": "1.7",
+      "xmlns": "http://www.ipc.com/ver10"
+    },
+    "types": [
+      {
+        "openAlramObj": [
+          {
+            "enum": [
+              "MOTION",
+              "SENSOR",
+              "PEA",
+              "AVD",
+              "OSC",
+              "CPC",
+              "CDD",
+              "IPD",
+              "VFD",
+              "VFD_MATCH",
+              "VEHICE",
+              "AOIENTRY",
+              "AOILEAVE",
+              "PASSLINECOUNT",
+              "TRAFFIC",
+              "FALLING",
+              "EA",
+              "VSD"
+            ]
+          }
+        ],
+        "subscribeRelation": [
+          {
+            "enum": [
+              "ALARM",
+              "FEATURE_RESULT",
+              "ALARM_FEATURE"
+            ]
+          }
+        ],
+        "perStatus": [
+          {
+            "enum": [
+              "SMART_NONE",
+              "SMART_START",
+              "SMART_STOP",
+              "SMART_PROCEDURE"
+            ]
+          }
+        ],
+        "targetType": [
+          {
+            "enum": [
+              "person",
+              "car",
+              "motor"
+            ]
+          }
+        ]
+      }
+    ],
+    "smartType": [
+      {
+        "_": "VFD",
+        "$": {
+          "type": "openAlramObj"
+        }
+      }
+    ],
+    "subscribeOption": [
+      {
+        "_": "FEATURE_RESULT",
+        "$": {
+          "type": "subscribeRelation"
+        }
+      }
+    ],
+    "currentTime": [
+      {
+        "_": "1736362068600385",
+        "$": {
+          "type": "tint64"
+        }
+      }
+    ],
+    "mac": [
+      {
+        "_": "84:11:c2:cd:33:35",
+        "$": {
+          "type": "string"
+        }
+      }
+    ],
+    "sn": [
+      {
+        "_": "I33350V1246A",
+        "$": {
+          "type": "string"
+        }
+      }
+    ],
+    "deviceName": [
+      {
+        "_": "I4-320IPEN-36-V4",
+        "$": {
+          "type": "string"
+        }
+      }
+    ],
+    "sourceDataInfo": [
+      {
+        "dataType": [
+          {
+            "_": "0",
+            "$": {
+              "type": "uint32"
+            }
+          }
+        ],
+        "width": [
+          {
+            "_": "1280",
+            "$": {
+              "type": "uint32"
+            }
+          }
+        ],
+        "height": [
+          {
+            "_": "720",
+            "$": {
+              "type": "uint32"
+            }
+          }
+        ],
+        "sourceBase64Length": [
+          {
+            "_": "0",
+            "$": {
+              "type": "uint32"
+            }
+          }
+        ],
+        "sourceBase64Data": [
+          {
+            "$": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    ],
+    "listInfo": [
+      {
+        "$": {
+          "type": "list",
+          "count": "2"
+        },
+        "item": [
+          {
+            "targetId": [
+              {
+                "_": "1229",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "Width": [
+              {
+                "_": "1280",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "Height": [
+              {
+                "_": "720",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "leftTop": [
+              {
+                "x": [
+                  {
+                    "_": "546",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ],
+                "y": [
+                  {
+                    "_": "322",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ]
+              }
+            ],
+            "rightTop": [
+              {
+                "x": [
+                  {
+                    "_": "606",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ],
+                "y": [
+                  {
+                    "_": "322",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ]
+              }
+            ],
+            "leftBottom": [
+              {
+                "x": [
+                  {
+                    "_": "546",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ],
+                "y": [
+                  {
+                    "_": "382",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ]
+              }
+            ],
+            "rightBottom": [
+              {
+                "x": [
+                  {
+                    "_": "606",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ],
+                "y": [
+                  {
+                    "_": "382",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ]
+              }
+            ],
+            "pose": [
+              {
+                "_": "0",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "sex": [
+              {
+                "_": "male",
+                "$": {
+                  "type": "sexType"
+                }
+              }
+            ],
+            "PosFaceImage": [
+              {
+                "x": [
+                  {
+                    "_": "562",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ],
+                "y": [
+                  {
+                    "_": "322",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ]
+              }
+            ],
+            "feature_score": [
+              {
+                "_": "0.00",
+                "$": {
+                  "type": "float"
+                }
+              }
+            ],
+            "eye_dist": [
+              {
+                "_": "0",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "blur": [
+              {
+                "_": "0",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "pose_est_score": [
+              {
+                "_": "0",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "illumination": [
+              {
+                "_": "0",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "faceliveness": [
+              {
+                "_": "0",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "completeness": [
+              {
+                "_": "0",
+                "$": {
+                  "type": "uint32"
+                }
+              }
+            ],
+            "comprehensive_score": [
+              {
+                "_": "97.00",
+                "$": {
+                  "type": "float"
+                }
+              }
+            ],
+            "targetImageData": [
+              {
+                "dataType": [
+                  {
+                    "_": "0",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ],
+                "targetType": [
+                  {
+                    "_": "person",
+                    "$": {
+                      "type": "targetType"
+                    }
+                  }
+                ],
+                "width": [
+                  {
+                    "_": "60",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ],
+                "height": [
+                  {
+                    "_": "60",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ],
+                "targetBase64Length": [
+                  {
+                    "_": "0",
+                    "$": {
+                      "type": "uint32"
+                    }
+                  }
+                ],
+                "sourceBase64Data": [
+                  {
+                    "$": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
